@@ -89,8 +89,8 @@ def createArticles():
 		createArticle(url_input=url)
 
 
-schedule.every(29).minutes.do(getLinks)
-schedule.every(29).minutes.do(createArticles)
+schedule.every(4).minutes.do(getLinks)
+schedule.every(4).minutes.do(createArticles)
 
 while 1:
 	try:
